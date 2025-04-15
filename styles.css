@@ -15,6 +15,13 @@ body {
   padding: 1rem;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d0d0d;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -24,7 +31,7 @@ header nav {
 }
 
 nav h1 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #fff;
 }
 
@@ -38,6 +45,7 @@ nav a {
   color: #f2f2f2;
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -45,8 +53,8 @@ nav a:hover {
 }
 
 .hero {
-  background-image: url("download.jpg");
-  background-size: cover;
+  background-image: url("daniel.jpg");
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -136,6 +144,12 @@ section {
 .socials a {
   color: #f2f2f2;
   text-decoration: none;
+}
+
+.socials a:hover {
+  color: #e63946;
+  transform: scale(1.2);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 footer {
